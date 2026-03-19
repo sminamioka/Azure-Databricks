@@ -1,0 +1,9 @@
+{
+	"name": "ADFCarsProjectUK",
+	"location": "westus2",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "f8aa9805-7b6e-41c8-b686-3062b05e7931",
+		"tenantId": "b6480ac6-6ac9-4c59-beae-b23c4eb8a92f"
+	}
+}
