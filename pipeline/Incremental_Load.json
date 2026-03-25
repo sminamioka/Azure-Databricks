@@ -127,6 +127,33 @@
 						}
 					}
 				}
+			},
+			{
+				"name": "Update Watertable",
+				"type": "SqlServerStoredProcedure",
+				"dependsOn": [
+					{
+						"activity": "Load Bronze Layer",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"storedProcedureName": "[dbo].[UpdateWatermarkTable]"
+				},
+				"linkedServiceName": {
+					"referenceName": "ls_SQL",
+					"type": "LinkedServiceReference"
+				}
 			}
 		],
 		"folder": {
