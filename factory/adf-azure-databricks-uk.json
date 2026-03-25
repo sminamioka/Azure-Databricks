@@ -1,0 +1,9 @@
+{
+	"name": "adf-azure-databricks-uk",
+	"location": "uksouth",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "41829ec5-4dd3-4efd-824a-daab8e7a1a88",
+		"tenantId": "b6480ac6-6ac9-4c59-beae-b23c4eb8a92f"
+	}
+}
