@@ -5,13 +5,13 @@
 		"annotations": [],
 		"type": "AzureSqlDatabase",
 		"typeProperties": {
-			"server": "srv-azure-databricks-uk.database.windows.net",
-			"database": "DBCars",
+			"server": "srv-azure-databricks.database.windows.net",
+			"database": "db-cars",
 			"encrypt": "mandatory",
 			"trustServerCertificate": false,
 			"authenticationType": "SQL",
 			"userName": "admin-sminamioka",
-			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQEFBNDE3RjIyLUJEOEItNDNDOC04NzdELTUxMUMxN0E1QTE4QV8wZjc4ZTdkOS0wMGNmLTRjMjAtOTIwOC0wZWYyOTc2ZmI3NmQiDQp9"
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDBGNUJGNkZBLUFBRkMtNDU4NS1BQ0I3LTRBRTdCMkVBNzg0Nl82MmEwMTlkOC1hNDVhLTQ3NGQtODcyNy0xNWQ3NGViODczMTYiDQp9"
 		}
 	}
 }
