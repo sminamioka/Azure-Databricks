@@ -87,7 +87,7 @@
 					"source": {
 						"type": "AzureSqlSource",
 						"sqlReaderQuery": {
-							"value": "SELECT * FROM source_cars_data WHERE Date_ID > @{activity('Last_Load').output.firstRow.last_load} AND DateID < @{activity('Current_Date').output.firstRow.max_date}",
+							"value": "SELECT * FROM source_cars_data WHERE Date_ID > '@{activity('Last_Load').output.firstRow.last_load}' AND Date_ID < '@{activity('Current_Date').output.firstRow.max_date}'",
 							"type": "Expression"
 						},
 						"queryTimeout": "02:00:00",
@@ -146,9 +146,17 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
-				"userProperties": [],
+				"userProperties": [
+					{
+						"name": "vLast_Load"
+					}
+				],
 				"typeProperties": {
-					"storedProcedureName": "[dbo].[UpdateWatermarkTable]"
+					"storedProcedureName": "[dbo].[UpdateWatermarkTable]",
+					"storedProcedureParameters": {
+						"value": "@activity('Current_Date').output.firstRow",
+						"type": "Expression"
+					}
 				},
 				"linkedServiceName": {
 					"referenceName": "LS_Azure_SQL",
